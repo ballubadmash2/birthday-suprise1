@@ -1,0 +1,46 @@
+body {
+  margin:0;
+  font-family:'Poppins', sans-serif;
+  background:linear-gradient(135deg,#ff9a9e,#fad0c4);
+  text-align:center;
+  color:white;
+  padding:20px;
+  overflow-x:hidden;
+}
+.page{display:none;min-height:100vh;padding:40px 20px;position:relative;}
+.page.active{display:block;}
+h1{font-size:32px;margin-bottom:20px;}
+p{font-size:18px;margin-bottom:20px;line-height:1.5;}
+button{background:white;color:#ff4b7d;border:none;padding:14px 26px;border-radius:30px;font-size:16px;margin-top:20px;cursor:pointer;}
+button:hover{background:#ffe3ec;}
+input{padding:10px;font-size:16px;border-radius:10px;border:none;margin-top:10px;}
+#timer{margin-top:20px;}
+
+/* Floating hearts */
+#hearts{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;overflow:hidden;}
+.heart{
+  position:absolute;
+  width:20px;
+  height:20px;
+  background:rgba(255,255,255,0.8);
+  transform:rotate(45deg);
+}
+.heart:after,.heart:before{
+  content:"";
+  position:absolute;
+  width:20px;
+  height:20px;
+  background:inherit;
+  border-radius:50%;
+}
+.heart:after{top:-10px;left:0;}
+.heart:before{left:-10px;top:0;}
+
+/* Confetti canvas */
+#confetti{
+  position:absolute;
+  top:0; left:0;
+  width:100%;
+  height:100%;
+  pointer-events:none;
+}
